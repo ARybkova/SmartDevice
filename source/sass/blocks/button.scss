@@ -1,26 +1,33 @@
-.btn {
-  display: inline-flex;
-  padding: 10px 20px;
-
-  color: $color-default-white;
-
-  background-color: $color-neon-blue;
-  border: none;
+.button {
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-alice-blue;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05em;
   cursor: pointer;
 
-  transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
+  &--light {
+    min-width: 130px;
+    margin-top: -5px;
+    padding: 9px 16px 13px 17px;
+    background-color: transparent;
+    border: 1px solid $color-alice-blue;
+    border-radius: 3px;
   }
+}
 
-  &:disabled {
-    opacity: 0.5;
+.button--light:hover,
+.button--light:focus {
+  color: $color-deep-sky-blue;
+  border-color: $color-deep-sky-blue;
+  opacity: 0.8;
+}
 
-    pointer-events: none;
-  }
-
-  @include hover-focus {
-    opacity: 0.8;
-  }
+.button--light:active {
+  color: $color-deep-sky-blue;
+  border-color: $color-deep-sky-blue;
+  opacity: 0.6;
 }

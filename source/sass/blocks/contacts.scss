@@ -1,0 +1,69 @@
+.contacts {
+  display: flex;
+  gap: 27px;
+  justify-content: space-between;
+  min-width: 460px;
+}
+
+.contacts__email {
+  display: flex;
+  gap: 14px;
+  max-width: 225px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.contacts__text {
+  color: $color-alice-blue;
+}
+
+.contacts__phone {
+  display: flex;
+  gap: 15px;
+  max-width: 225px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@include vp-1023 {
+  .contacts {
+    gap: 20px;
+    min-width: 100px;
+  }
+
+  .contacts__email {
+    padding: 10px;
+  }
+
+  .contacts__phone {
+    padding: 10px;
+  }
+
+  .contacts__text {
+    display: none;
+  }
+}
+
+@include vp-767 {
+  .contacts__email {
+    padding: 5px 11px 10px 9px;
+  }
+
+  .contacts__phone {
+    padding: 5px 10px 10px;
+  }
+}

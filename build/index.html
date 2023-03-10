@@ -4,14 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="fonts/pt-mono-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <h1 class="visually-hidden">Компания Smart Device.</h1>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="main-header">
+        <div class="main-header__container container">
+          <div class="main-header__logo">
+            <a class="main-header__logo-link" href="#">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/logo-mobile.svg" width="35" height="35">
+                <img src="img/logo-desktop-tablet.svg" width="215" height="55"
+                  alt="Логотип компании Smart Device.">
+              </picture>
+            </a>
+          </div>
+
+          <div class="main-header__contacts contacts">
+            <a class="contacts__email" href="mailto:info@sd.ru">
+              <svg class="contacts__email-icon" width="20" height="20" viewBox="0 0 20 20">
+                <use href="img/sprite.svg#email"></use>
+              </svg>
+              <span class="contacts__text">info@sd.ru</span>
+            </a>
+
+            <a class="contacts__phone" href="tel:+74950005252">
+              <svg class="contacts__phone-icon" width="20" height="20" viewBox="0 0 20 20">
+                <use href="img/sprite.svg#phone"></use>
+              </svg>
+              <span class="contacts__text">+7 (495) 000 52 52</span>
+            </a>
+          </div>
+
+          <a class="main-header__button button button--light" href="#">Заказать звонок</a>
+        </div>
       </header>
       <main>
 
