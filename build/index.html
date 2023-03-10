@@ -46,11 +46,117 @@
           <a class="main-header__button button button--light" href="#">Заказать звонок</a>
         </div>
       </header>
-      <main>
+      <main class="main">
 
       </main>
-      <footer>
-        <div class="container"></div>
+
+      <footer class="main-footer">
+        <div class="main-footer__container container">
+
+          <div class="main-footer__logo-social">
+            <div class="main-footer__logo">
+              <a class="main-footer__logo-link" href="#">
+                  <img class="main-footer__logo-image" src="img/logo-desktop-tablet.svg" width="215" height="55"
+                    alt="Логотип компании Smart Device.">
+              </a>
+            </div>
+
+            <ul class="main-footer__social-list social-list">
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link--ok" href="#">
+                  <svg class="social-list__icon" width="30" height="30" viewBox="0 0 30 30">
+                    <use href="img/sprite.svg#ok"></use>
+                  </svg>
+                  <span class="visually-hidden">Одноклассники.</span>
+                </a>
+              </li>
+
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link--vk" href="#">
+                  <svg class="social-list__icon" width="30" height="30" viewBox="0 0 30 30">
+                    <use href="img/sprite.svg#vk"></use>
+                  </svg>
+                  <span class="visually-hidden">Вконтакте.</span>
+                </a>
+              </li>
+
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link--pinterest" href="#">
+                  <svg class="social-list__icon social-list__icon--pinterest" width="30" height="30" viewBox="0 0 30 30">
+                    <use href="img/sprite.svg#pinterest"></use>
+                  </svg>
+                  <span class="visually-hidden">Pinterest.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main-footer__information" data-accordion="parent" data-single data-destroy="(max-width: 767px)">
+            <nav class="main-footer__navigation navigation" data-accordion="element">
+              <h2>Разделы сайта</h2>
+              <button class="navigation__toggle" type="button" data-accordion="button">
+                <span class="visually-hidden">Развернуть.</span>
+              </button>
+              <div class="navigation__container" data-accordion="content">
+                <ul class="navigation__list">
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">О Компании</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Продукты</a>
+                  </li>
+                  <li class="navigation__item navigation__item--production">
+                    <a class="navigation__link" href="#">Производство печатных <br>плат</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Монтаж печатных плат</a>
+                  </li>
+                </ul>
+                <ul class="navigation__list">
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Комплектующие</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Доставка</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="main-footer__address address" data-accordion="element">
+              <h2>Наш офис</h2>
+              <button class="address__toggle" type="button" data-accordion="button">
+                <span class="visually-hidden">Развернуть.</span>
+              </button>
+              <ul class="address__list" data-accordion="content">
+                <li class="address__item address__item--location">
+                  <a class="address__link" href="#">
+                    г.&nbsp;Мытищи, Олимпийский&nbsp;проспект,<br>д.10
+                  </a>
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="tel:+74955894050">
+                    +7 (495) 589-40-50
+                  </a>
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="tel:+79253895829">
+                    +7 (925) 389-58-29
+                  </a>
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="tel:+79253647813">
+                    +7 (925) 364-78-13
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
       </footer>
     </div>
 

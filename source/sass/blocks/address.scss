@@ -1,0 +1,129 @@
+.address h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: $roboto-condensed;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.address__toggle {
+  display: none;
+}
+
+.address__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.address__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address__link {
+  line-height: 135%;
+  color: $color-default-white;
+  opacity: 0.7;
+
+  &:hover,
+  &:focus {
+    color: $color-deep-sky-blue;
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: $color-deep-sky-blue;
+    opacity: 0.6;
+  }
+}
+
+@include vp-767 {
+  .address {
+    position: relative;
+    max-width: 100%;
+    padding: 0 25px;
+    border-top: 1px solid $color-alice-blue;
+    border-bottom: 0.5px solid $color-alice-blue;
+  }
+
+  .address h2 {
+    margin-bottom: 0;
+    margin-left: -1px;
+    padding: 23px 0 16px;
+  }
+
+  .address__toggle {
+    position: absolute;
+    top: 20px;
+    right: 27px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 15px;
+      height: 1px;
+      background-color: $color-alice-blue;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 15px;
+      background-color: $color-alice-blue;
+      transform: translateX(-50%);
+    }
+  }
+
+  .address__toggle:hover::before,
+  .address__toggle:hover::after,
+  .address__toggle:focus::before,
+  .address__toggle:focus::after {
+    background-color: $color-deep-sky-blue;
+    opacity: 0.8;
+  }
+
+  .address__toggle:active::before,
+  .address__toggle:active::after {
+    background-color: $color-deep-sky-blue;
+    opacity: 0.6;
+  }
+
+  .address.is-active .address__toggle::after {
+    opacity: 0;
+  }
+
+  .address__item {
+    margin-bottom: 12px;
+
+    &--location {
+      margin-bottom: 20px;
+    }
+
+    &:last-child {
+      margin-bottom: 16px;
+    }
+  }
+
+  .address__link {
+    font-size: 14px;
+  }
+}

@@ -20,6 +20,10 @@
   }
 }
 
+.contacts__email-icon {
+  fill: $color-deep-sky-blue;
+}
+
 .contacts__text {
   color: $color-alice-blue;
 }
@@ -37,6 +41,10 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.contacts__phone-icon {
+  fill: $color-deep-sky-blue;
 }
 
 @include vp-1023 {
