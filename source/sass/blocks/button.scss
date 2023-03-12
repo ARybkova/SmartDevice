@@ -7,6 +7,7 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.05em;
+  border-radius: 3px;
   cursor: pointer;
 
   &--light {
@@ -15,7 +16,23 @@
     padding: 10px 16px 12px 17px;
     background-color: transparent;
     border: 1px solid $color-alice-blue;
-    border-radius: 3px;
+  }
+
+  &--promo {
+    max-width: 411px;
+    margin-left: -1px;
+    padding: 15px 25px 19px;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: $color-deep-sky-blue;
+  }
+
+  &--promo-big {
+    display: block;
+  }
+
+  &--promo-small {
+    display: none;
   }
 }
 
@@ -30,4 +47,35 @@
   color: $color-deep-sky-blue;
   border-color: $color-deep-sky-blue;
   opacity: 0.6;
+}
+
+.button--promo:hover,
+.button--promo:focus {
+  background-color: $color-alice-blue;
+  color: $color-deep-sky-blue;
+}
+
+.button--promo:active {
+  background-color: $color-alice-blue;
+  color: $color-deep-sky-blue;
+  opacity: 0.8;
+}
+
+@include vp-1023 {
+  .button--promo-big {
+    margin-left: 44px;
+  }
+}
+
+@include vp-767 {
+  .button--promo-big {
+    display: none;
+  }
+
+  .button--promo-small {
+    display: block;
+    padding: 12px 30px;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
