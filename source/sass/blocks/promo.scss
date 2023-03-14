@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+
+  @include retina {
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/promo-bg@2x.jpg");
+  }
 }
 
 .promo__container {

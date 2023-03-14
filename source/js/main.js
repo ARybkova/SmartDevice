@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordions} from './modules/accordion/init-accordion';
+import {showMore} from './modules/show-more';
 
 // ---------------------------------
 
@@ -13,6 +14,8 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+  showMore();
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
