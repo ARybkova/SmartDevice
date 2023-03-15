@@ -1,5 +1,6 @@
 .contacts {
   display: flex;
+  flex-wrap: wrap;
   gap: 27px;
   justify-content: space-between;
   min-width: 460px;

@@ -38,7 +38,7 @@
 
 @include vp-1023 {
   .social-list {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     max-width: 400px;
     margin: 5px 0 0 0;
   }
