@@ -5,13 +5,13 @@
   margin-bottom: 120px;
   padding: 305px 0 280px;
   background-color: $color-black-pearl;
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/promo-bg.jpg");
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/promo-bg.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
 
   @include retina {
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/promo-bg@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/promo-bg@2x.jpg");
   }
 }
 
