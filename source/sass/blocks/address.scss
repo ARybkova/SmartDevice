@@ -1,6 +1,6 @@
 .address h2 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding: 0;
   font-family: $roboto-condensed;
   font-size: 15px;
@@ -21,7 +21,7 @@
 }
 
 .address__item {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
   &:last-child {
     margin-bottom: 0;
@@ -111,14 +111,14 @@
   }
 
   .address__item {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
 
     &--location {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     &:last-child {
-      margin-bottom: 16px;
+      margin-bottom: 15px;
     }
   }
 

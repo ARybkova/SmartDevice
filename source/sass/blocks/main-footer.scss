@@ -1,6 +1,6 @@
 .main-footer {
   width: 100%;
-  padding: 50px 0 43px;
+  padding: 51px 0 43px;
   background-color: $color-black-pearl;
 }
 
@@ -46,7 +46,7 @@
 
   .main-footer__container {
     flex-direction: column;
-    row-gap: 38px;
+    row-gap: 37px;
     padding: 0 45px 0 50px;
   }
 
@@ -63,7 +63,7 @@
   }
 
   .main-footer__address {
-    padding-right: 21px;
+    padding-right: 18px;
   }
 }
 
@@ -80,7 +80,7 @@
   .main-footer__logo-social {
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 15px;
   }
 
   .main-footer__logo {

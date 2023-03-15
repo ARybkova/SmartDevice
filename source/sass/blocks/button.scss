@@ -41,6 +41,27 @@
     background-color: transparent;
     border: 1px solid $color-deep-sky-blue;
   }
+
+  &--dark {
+    min-width: 265px;
+    padding: 15px 25px 10px;
+    background-color: $color-black-pearl;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: $color-default-white;
+  }
+
+  &--modal {
+    min-width: 100%;
+    // min-width: 265px;
+    padding: 16px 25px 10px;
+    background-color: $color-black-pearl;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: $color-default-white;
+  }
 }
 
 .button--light:hover,
@@ -80,14 +101,43 @@
   opacity: 0.6;
 }
 
+.button--dark:hover,
+.button--dark:focus {
+  background-color: $color-alice-blue;
+  color: $color-black-pearl;
+}
+
+.button--dark:active {
+  background-color: $color-alice-blue;
+  color: $color-black-pearl;
+  opacity: 0.8;
+}
+
+.button--modal:hover,
+.button--modal:focus {
+  background-color: $color-alice-blue;
+  color: $color-black-pearl;
+}
+
+.button--modal:active {
+  background-color: $color-alice-blue;
+  color: $color-black-pearl;
+  opacity: 0.8;
+}
+
 @include vp-1023 {
   .button--promo {
-    margin-left: 46px;
-    padding: 16px 28px 20px 26px;
+    margin-left: 45px;
+    padding: 16px 28px 18px 26px;
   }
 
   .button--contrast {
     margin-left: 0;
+    padding: 14px 13px 12px 11px;
+  }
+
+  .button--dark {
+    padding: 17px 25px 9px;
   }
 }
 
@@ -95,7 +145,7 @@
   .button--promo {
     display: block;
     margin-left: 0;
-    padding: 14px 30px 11px;
+    padding: 13px 30px 11px;
     font-size: 14px;
     line-height: 16px;
 
@@ -106,6 +156,11 @@
 
   .button--contrast {
     min-width: 160px;
-    padding: 9px 10px 9px 10px;
+    padding: 8px 10px 9px;
+  }
+
+  .button--dark {
+    min-width: 270px;
+    padding: 16px 25px 10px;
   }
 }
