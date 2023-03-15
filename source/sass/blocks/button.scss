@@ -29,6 +29,10 @@
     background-color: $color-deep-sky-blue;
   }
 
+  &--promo::after {
+    content: attr(data-button-promo-desktop);
+  }
+
   &--contrast {
     min-width: 180px;
     margin-left: 1px;
@@ -36,16 +40,6 @@
     color: $color-deep-sky-blue;
     background-color: transparent;
     border: 1px solid $color-deep-sky-blue;
-  }
-}
-
-.button--promo span {
-  &:first-child {
-    display: block;
-  }
-
-  &:last-child {
-    display: none;
   }
 }
 
@@ -104,15 +98,9 @@
     padding: 14px 30px 11px;
     font-size: 14px;
     line-height: 16px;
-  }
 
-  .button--promo span {
-    &:first-child {
-      display: none;
-    }
-
-    &:last-child {
-      display: block;
+    &::after {
+      content: attr(data-button-promo-mobile);
     }
   }
 
