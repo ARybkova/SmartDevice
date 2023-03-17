@@ -55,6 +55,7 @@
     padding: 38px 40px 40px 40px;
     background-color: $color-deep-sky-blue;
     border-radius: 3px;
+    transform: translateX(-8px) translateY(-14px);
   }
 
   &__close-button {
@@ -133,7 +134,8 @@
   }
 }
 
-.modal__input input:not([type="checkbox"]) {
+.modal__input input[type="text"],
+.modal__input input[type="tel"] {
   width: 100%;
   min-width: 420px;
   padding: 15px;
@@ -198,15 +200,25 @@
   }
 }
 
+.modal__input .is-invalid {
+  color: $color-torch-red;
+}
+
 .modal__button {
   margin-top: 0;
 }
 
 .modal__input--checkbox label {
-  display: flex;
+  display: grid;
+  grid-template-columns: 15px 1fr;
   align-items: center;
   gap: 11px;
   margin-left: 9px;
+}
+
+.modal__input--checkbox .is-invalid {
+  grid-column: 1/-1;
+  opacity: 1;
 }
 
 .modal__input--checkbox input {
