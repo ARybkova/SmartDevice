@@ -18,11 +18,8 @@
   margin-top: 80px;
 }
 
-.form__content {
-  max-width: 580px;
-}
-
 .form__content p {
+  max-width: 580px;
   margin: 0;
   margin-bottom: 11px;
   padding: 0;
@@ -35,6 +32,7 @@
 
 .form__content span {
   display: inline-block;
+  max-width: 580px;
   margin-left: 5px;
   margin-bottom: 35px;
   line-height: 22px;
@@ -202,10 +200,12 @@
   }
 
   .form__content p {
+    max-width: 670px;
     margin-bottom: 6px;
   }
 
   .form__content span {
+    max-width: 670px;
     margin-left: 0;
     margin-bottom: 25px;
   }
@@ -239,7 +239,7 @@
   .form__input--checkbox input {
     margin-top: -28px;
     margin-left: 1px;
-    width: 19px;
+    width: 15px;
     height: 15px;
   }
 }
@@ -310,6 +310,7 @@
   }
 
   .form__input--checkbox label {
+    gap: 16px;
     margin-top: 2px;
     line-height: 16px;
   }
@@ -317,7 +318,7 @@
   .form__input--checkbox input {
     margin-top: -38px;
     margin-left: 6px;
-    width: 21px;
+    width: 15px;
     height: 14px;
   }
 }
