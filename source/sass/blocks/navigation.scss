@@ -69,6 +69,12 @@
   }
 }
 
+// @media (min-width: 767px) {
+//   .navigation__list {
+//     max-height: auto;
+//   }
+// }
+
 @include vp-1023 {
   .navigation {
     max-width: 220px;
@@ -155,6 +161,10 @@
 
   .navigation.is-active .navigation__toggle::after {
     opacity: 0;
+  }
+
+  .navigation__list {
+    max-height: 0;
   }
 
   .navigation__item:last-child {

@@ -2866,6 +2866,10 @@ button,
     opacity: 0;
   }
 
+  .navigation__list {
+    max-height: 0;
+  }
+
   .navigation__item:last-child {
     margin-bottom: 10px;
   }
