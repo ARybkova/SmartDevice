@@ -1,4 +1,6 @@
 .navigation {
+  display: flex;
+  flex-flow: column wrap;
   max-width: 470px;
   margin-right: 17px;
 }
