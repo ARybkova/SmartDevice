@@ -11,11 +11,15 @@
   max-width: 1300px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main-header__logo {
   margin-right: 30px;
+}
+
+.main-header__logo img {
+  min-width: 215px;
 }
 
 .main-header__logo-link:hover,
@@ -29,7 +33,7 @@
 
 .main-header__contacts {
   margin-right: 33px;
-  padding: 15px 0 20px;
+  padding: 15px 0 20px 20px;
 }
 
 .main-header__button {
@@ -69,6 +73,10 @@
 
   .main-header__logo {
     margin-left: 1px;
+  }
+
+  .main-header__logo img {
+    min-width: 35px;
   }
 
   .main-header__contacts {

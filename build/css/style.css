@@ -662,13 +662,17 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .main-header__logo {
   margin-right: 30px;
+}
+
+.main-header__logo img {
+  min-width: 215px;
 }
 
 .main-header__logo-link:hover,
@@ -682,7 +686,7 @@ button,
 
 .main-header__contacts {
   margin-right: 33px;
-  padding: 15px 0 20px;
+  padding: 15px 0 20px 20px;
 }
 
 .main-header__button {
@@ -697,10 +701,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 27px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-width: 460px;
+  min-width: 500px;
 }
 
 .contacts__email {
@@ -709,6 +710,7 @@ button,
   display: flex;
   gap: 14px;
   max-width: 225px;
+  padding-right: 95px;
 }
 
 .contacts__email:hover,
@@ -764,8 +766,8 @@ button,
 }
 
 .button--light {
-  min-width: 130px;
-  margin-top: -5px;
+  min-width: 161px;
+  margin-top: 5px;
   padding: 10px 16px 12px 17px;
   background-color: transparent;
   border: 1px solid #f2f5f7;
@@ -1291,6 +1293,7 @@ button,
   min-height: 155px;
   padding: 24px 14px;
   background-color: rgba(4, 20, 39, 0.15);
+  color: #ffffff;
   border: none;
   border-radius: 3px;
 }
@@ -1562,6 +1565,10 @@ button,
 }
 
 .navigation__link {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 135%;
   color: #ffffff;
   opacity: 0.7;
@@ -1773,6 +1780,8 @@ button,
   max-width: 420px;
   padding-top: 40px;
   padding-bottom: 4px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  line-height: 22px;
 }
 
 .modal__input--name {
@@ -1886,6 +1895,7 @@ button,
   min-height: 155px;
   padding: 25px 16px;
   background-color: rgba(4, 20, 39, 0.15);
+  color: #ffffff;
   border: none;
   border-radius: 3px;
 }
@@ -2271,6 +2281,11 @@ button,
     display: none;
   }
 
+  .form__content {
+    width: 100%;
+    max-width: 923px;
+  }
+
   .form__content p {
     max-width: 670px;
     margin-bottom: 6px;
@@ -2284,7 +2299,8 @@ button,
 
   .form__content form {
     row-gap: 20px;
-    max-width: 670px;
+    width: 100%;
+    max-width: 923px;
     margin-left: 0;
   }
 
@@ -2404,6 +2420,10 @@ button,
 
   .main-header__logo {
     margin-left: 1px;
+  }
+
+  .main-header__logo img {
+    min-width: 35px;
   }
 
   .main-header__contacts {

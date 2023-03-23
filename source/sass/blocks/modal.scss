@@ -110,6 +110,8 @@
   max-width: 420px;
   padding-top: 40px;
   padding-bottom: 4px;
+  font-family: $pt-mono;
+  line-height: 22px;
 }
 
 .modal__input {
@@ -173,6 +175,7 @@
   min-height: 155px;
   padding: 25px 16px;
   background-color: rgba(4, 20, 39, 0.15);
+  color: $color-default-white;
   border: none;
   border-radius: 3px;
 

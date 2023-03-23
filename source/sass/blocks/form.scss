@@ -87,6 +87,7 @@
   min-height: 155px;
   padding: 24px 14px;
   background-color: rgba(4, 20, 39, 0.15);
+  color: $color-default-white;
   border: none;
   border-radius: 3px;
 
@@ -199,6 +200,11 @@
     display: none;
   }
 
+  .form__content {
+    width: 100%;
+    max-width: 923px;
+  }
+
   .form__content p {
     max-width: 670px;
     margin-bottom: 6px;
@@ -212,7 +218,8 @@
 
   .form__content form {
     row-gap: 20px;
-    max-width: 670px;
+    width: 100%;
+    max-width: 923px;
     margin-left: 0;
   }
 

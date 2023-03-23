@@ -2,14 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 27px;
-  justify-content: space-between;
-  min-width: 460px;
+  min-width: 500px;
 }
 
 .contacts__email {
   display: flex;
   gap: 14px;
   max-width: 225px;
+  padding-right: 95px;
 
   &:hover,
   &:focus {
